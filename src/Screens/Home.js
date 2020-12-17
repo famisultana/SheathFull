@@ -35,45 +35,66 @@ export default class Home extends Component {
 
   render() {
     console.log(this.state.items);
+
     return (
       <RootView>
-        <View style={{margin: metrics.defaultMargin}}>
+        {/* <View style={{margin: metrics.defaultMargin}}>
           <Text style={{fontSize: scaleFont(30), fontWeight: '900'}}>
             Fresh Taste of
           </Text>
           <Text style={{fontSize: scaleFont(30)}}>Maestro Sweets</Text>
-        </View>
+        </View> */}
+        <View style={{
+          backgroundColor:colors.secondary,
+          height: metrics.height * 0.15,
+          borderBottomRightRadius:20,
+          borderBottomLeftRadius:20
+          }}>
         <ListView
           data={data.category}
-          renderItem={({item}) => (
-            <TouchableOpacity
-              activeOpacity={0.9}
-              onPress={() => this.onIndexChange(item.id)}>
-              <View
-                style={{
-                  width: metrics.height * 0.09,
-                  height: metrics.height * 0.09,
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  borderRadius: metrics.height * 0.1,
-                  backgroundColor:
-                    item.id == this.state.selectedIndex
-                      ? colors.primary
-                      : 'white',
-                  marginLeft: metrics.defaultMargin,
-                  padding: 5,
-                }}>
-                <ImageView
-                  source={item.GrayIcon}
-                  style={{width: '100%', height: '100%'}}
-                  tintColor={
-                    item.id == this.state.selectedIndex ? 'white' : 'black'
-                  }
-                />
+          renderItem={({item}) => {
+            const flag = item.id == this.state.selectedIndex;
+            return (
+              <View style={{alignItems: 'center',justifyContent: 'center',alignSelf: 'center'}}>
+              <TouchableOpacity
+                activeOpacity={0.9}
+                onPress={() => this.onIndexChange(item.id)}>
+                <View
+                  style={{
+                    width: metrics.height * 0.09,
+                    height: metrics.height * 0.09,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderRadius: 20,
+                    backgroundColor:
+                      flag
+                        ? colors.primary
+                        : colors.secondary,
+                    marginLeft: metrics.defaultMargin,
+                    padding: 5,
+                    borderWidth:2,
+                    borderColor:flag ? colors.secondary:'#5e6369'
+                  }}>
+                  <ImageView
+                    source={item.GrayIcon}
+                    style={{width: '100%', height: '100%'}}
+                    tintColor={
+                      flag ? 'white' :'#5e6369'
+                    }
+                  />
+                </View>
+              </TouchableOpacity>
+                  <Text style={{
+                    textAlign: 'center',
+                    alignSelf: 'center',
+                    color:flag ? 'white' : '#474c52'
+                    
+                  }}>{item.category}</Text>
               </View>
-            </TouchableOpacity>
-          )}
+            )
+          }}
         />
+        </View>
         {this.state.items.length > 4 && (
           <View
             style={{

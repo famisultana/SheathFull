@@ -1,407 +1,369 @@
-export default {
-  category: [
-    {
-      id: '1',
-      category: 'Breads',
-      whiteIcons: require('../resources/images/icons/Breads1.png'),
-      GrayIcon: require('../resources/images/icons/Breads.png'),
-      undefined: 'rating',
-    },
-    {
-      id: '2',
-      category: 'Cakes',
-      whiteIcons: require('../resources/images/icons/Cakes1.png'),
-      GrayIcon: require('../resources/images/icons/Cakes.png'),
-      undefined: '3.5',
-    },
-    {
-      id: '3',
-      category: 'Cookies',
-      whiteIcons: require('../resources/images/icons/Cookies1.png'),
-      GrayIcon: require('../resources/images/icons/Cookies.png'),
-      undefined: '4',
-    },
-    {
-      id: '4',
-      category: 'Pie',
-      whiteIcons: require('../resources/images/icons/Pie1.png'),
-      GrayIcon: require('../resources/images/icons/Pie.png'),
-      undefined: '4',
-    },
-    {
-      id: '5',
-      category: 'Brownie ',
-      whiteIcons: require('../resources/images/icons/Brownie1.png'),
-      GrayIcon: require('../resources/images/icons/Brownie.png'),
-      undefined: '5',
-    },
-    {
-      id: '6',
-      category: 'Pastries  ',
-      whiteIcons: require('../resources/images/icons/Pastries1.png'),
-      GrayIcon: require('../resources/images/icons/Pastries.png'),
-      undefined: '3.2',
-    },
-  ],
-  products: [
-    {
-      id: '1',
-      category: '1',
-      productName: 'Currant Almond Bread',
-      image: require('../resources/images/Bread1.jpg'),
-      description:
-        'A one pound loaf of bread filled with citron fruit, currants, and almond paste.',
-      price: '4',
-      rating: '3.5',
-    },
-    {
-      id: '2',
-      category: '1',
-      productName: 'Cinnamon Bread',
-      image: require('../resources/images/Bread2.jpg'),
-      description:
-        'A delicious bread with cinnamon swirled into the dough and frosted with maple icing. This bread makes wonderful French toast! We highly recommend 2nd Day Air shipping for this product.',
-      price: '12',
-      rating: '4',
-    },
-    {
-      id: '3',
-      category: '1',
-      productName: 'Dutch Apple Bread',
-      image: require('../resources/images/Bread3.jpg'),
-      description:
-        'This delicious sweet bread is filled with chopped apples and almonds, then frosted with maple icing. We highly recommend 2nd Day Air for this product.',
-      price: '10',
-      rating: '4',
-    },
-    {
-      id: '4',
-      category: '1',
-      productName: 'fruit bread',
-      image: require('../resources/images/Bread4.jpg'),
-      description:
-        'This fruit bread is an eggless bread Made with whole wheat flour in a larger proportion.',
-      price: '6',
-      rating: '5',
-    },
-    {
-      id: '5',
-      category: '1',
-      productName: 'Dried Fruit  Bread',
-      image: require('../resources/images/bread5.jpg'),
-      description:
-        'Make this show-stopper yeasted bread, with dried fruits and sweet glaze, for a special breakfast or brunch.',
-      price: '8',
-      rating: '3.2',
-    },
-    {
-      id: '6',
-      category: '1',
-      productName: 'Artisan Asiago Bread',
-      image: require('../resources/images/bread6.jpg'),
-      description:
-        "This large, flour-sprinkled loaf looks and tastes like it came from a bakery. When you slice it, you'll find pockets of cheese scattered throughout.",
-      price: '3',
-      rating: '5',
-    },
-    {
-      id: '7',
-      category: '2',
-      productName: 'Almond Butter Cake',
-      image: require('../resources/images/AlmondButterCake.jpg'),
-      description:
-        'Almond Butter Cake (or in Dutch, Boter Koek), is a buttery tort pastry with almond filling,',
-      price: '15',
-      rating: '5',
-    },
-    {
-      id: '8',
-      category: '2',
-      productName: 'Hot Chocolate Bundt Cake',
-      image: require('../resources/images/cake1.jpg'),
-      description:
-        'This intensely decadent, triple chocolate Bundt cake is the perfect dessert to place on a Christmas dinner table and enjoy with family and friends.',
-      price: '18',
-      rating: '4',
-    },
-    {
-      id: '9',
-      category: '2',
-      productName: 'Butter-Rum Pound Cake',
-      image: require('../resources/images/cake2.jpg'),
-      description:
-        'A shortcut because it begins with a mix, this pound cake is moist and full of seductive butter-rum flavor.',
-      price: '10',
-      rating: '5',
-    },
-    {
-      id: '10',
-      category: '2',
-      productName: 'Chocolate Malt Ice-Cream Cake',
-      image: require('../resources/images/cake3.jpg'),
-      description:
-        'Make your cake even better by topping it with malted milk ball candies.',
-      price: '6',
-      rating: '3.2',
-    },
-    {
-      id: '11',
-      category: '2',
-      productName: 'Double-Chocolate Peppermint Cheesecake',
-      image: require('../resources/images/cake4.jpg'),
-      description:
-        'Serve your guests with this cheesecake that’s made with chocolate – a minty Christmas dessert.',
-      price: '8',
-      rating: '5',
-    },
-    {
-      id: '12',
-      category: '2',
-      productName: 'Rainbow Christmas Wreath',
-      image: require('../resources/images/cake5.jpg'),
-      description:
-        'A welcome addition to any holiday table, our delicious Rainbow Christmas Wreath is made from Betty Crocker',
-      price: '3',
-      rating: '4.6',
-    },
-    {
-      id: '13',
-      category: '3',
-      productName: 'Date Macaroons',
-      image: require('../resources/images/DateMacaroons.jpg'),
-      description:
-        'Small half dollar sized cookies that are chewy and made with dates.',
-      price: '10',
-      rating: '5',
-    },
-    {
-      id: '14',
-      category: '3',
-      productName: 'Pumpkin Cookies',
-      image: require('../resources/images/cookies1.jpg'),
-      description:
-        'Get fall into full swing with sweet flavor, warm spices, and moist texture! Then, add your magic touch with a scene-stealing slightly burnt brown butter',
-      price: '6',
-      rating: '3.2',
-    },
-    {
-      id: '15',
-      category: '3',
-      productName: 'Mix Peanut Butter Cookies',
-      image: require('../resources/images/cookies2.jpg'),
-      description:
-        'Make it look easy to make a classic. These deliciously soft and delightfully easy peanut butter cookies',
-      price: '8',
-      rating: '5',
-    },
-    {
-      id: '16',
-      category: '3',
-      productName: 'Trail Monster Cookies',
-      image: require('../resources/images/cookies3.jpg'),
-      description:
-        'Monster cookies are packed with goodies like oats, raisins, peanuts, chocolate and more.',
-      price: '3',
-      rating: '4.6',
-    },
-    {
-      id: '17',
-      category: '3',
-      productName: 'Gluten-Free Sugar Cookies',
-      image: require('../resources/images/cookies4.jpg'),
-      description:
-        'Betty makes it easy to make sure everyone can enjoy your baking prowess. Get ready for extra smiles when you bake a batch of these colorful cookies',
-      price: '6',
-      rating: '3.2',
-    },
-    {
-      id: '18',
-      category: '3',
-      productName: 'Mix Apple-Spice Cookies',
-      image: require('../resources/images/cookies5.jpg'),
-      description:
-        'Fresh chopped apple adds a bit of autumn snap to these harvest-time treats.',
-      price: '8',
-      rating: '5',
-    },
-    {
-      id: '19',
-      category: '4',
-      productName: 'Classic Lemon Meringue Pie',
-      image: require('../resources/images/pie1.jpg'),
-      description:
-        'Then try this lemon meringue pie. It’s bursting with fresh citrus flavor and a sweet, creamy meringue topping. If you’re pressed for time',
-      price: '3',
-      rating: '5',
-    },
-    {
-      id: '20',
-      category: '4',
-      productName: 'Chocolate-Peanut Butter Pie',
-      image: require('../resources/images/pie2.jpg'),
-      description:
-        'Passion for pie but not for the traditional preparation? This easy-press cereal crust makes pie-making a snap!',
-      price: '10',
-      rating: '4',
-    },
-    {
-      id: '21',
-      category: '4',
-      productName: 'Impossibly Easy Pumpkin Pie',
-      image: require('../resources/images/pie3.jpg'),
-      description:
-        "This makes it possible for you to whip up an amazing dessert right before your big family meal. They won't notice a thing, because the taste takes this pie",
-      price: '6',
-      rating: '5',
-    },
-    {
-      id: '22',
-      category: '4',
-      productName: 'Frosty French Silk Pie',
-      image: require('../resources/images/pie4.jpg'),
-      description:
-        'Love the classic decadent French Silk Pie? Try a frosty version. You can sneak a piece from the freezer any time you crave it.',
-      price: '8',
-      rating: '3.2',
-    },
-    {
-      id: '23',
-      category: '4',
-      productName: 'Easy Banana Custard Pie',
-      image: require('../resources/images/pie5.jpg'),
-      description:
-        'Peel open a new version of homemade banana pie. Warm caramel topping adds a special touch.',
-      price: '3',
-      rating: '5',
-    },
+const colors = ['#dce5f1','#ebe8de','#ffece7','#ffece7','#eafbdd','#f4f3fe']
 
-    {
-      id: '25',
-      category: '5',
-      productName: 'Brownie Batter Bars',
-      image: require('../resources/images/Brownie1.jpg'),
-      description:
-        'creamy chocolate cheesecake with a chocolatey crust and a topping of silky chocolate ganache.',
-      price: '3',
-      rating: '5',
-    },
-    {
-      id: '26',
-      category: '5',
-      productName: 'Mississippi Mud Brownies',
-      image: require('../resources/images/Brownie2.jpg'),
-      description:
-        'A take on Mississippi Mud Pie, these gooey, chocolaty brownies, packed with Oreo™ cookies, marshmallows, ganache and a creamy filling, are the ultimate indulgence.',
-      price: '10',
-      rating: '4.2',
-    },
-    {
-      id: '27',
-      category: '5',
-      productName: 'Chocolate Mint Brownies',
-      image: require('../resources/images/Brownie3.jpg'),
-      description:
-        'Indulge in a classic bar with three delicious layers—fudgy brownies, minty filling and chocolate glaze.',
-      price: '6',
-      rating: '5',
-    },
-    {
-      id: '28',
-      category: '5',
-      productName: 'Traditional Brownie Goody Bars',
-      image: require('../resources/images/Brownie4.jpg'),
-      description:
-        'Frost brownies with frosting. Sprinkle with peanuts; refrigerate while making cereal mixture.',
-      price: '8',
-      rating: '5',
-    },
-    {
-      id: '29',
-      category: '5',
-      productName: 'Peanut Butter Truffle Brownies',
-      image: require('../resources/images/Brownie5.jpg'),
-      description:
-        'Start with a no-fail brownie mix, then add layers of peanut butter and melted chocolate chips. Yum.',
-      price: '3',
-      rating: '4',
-    },
-    {
-      id: '30',
-      category: '5',
-      productName: 'Cashew-Caramel Brownies',
-      image: require('../resources/images/Brownie6.jpg'),
-      description:
-        'Then check out these caramel and pecan brownies – a crunchy treat!',
-      price: '6',
-      rating: '5',
-    },
-    {
-      id: '31',
-      category: '6',
-      productName: 'Almond Banket Pastry',
-      image: require('../resources/images/Pastires.jpg'),
-      description:
-        'Similar to the Dutch Letter, the banket has three times the amount of almond paste filling wrapped in a flaky puff pastry.',
-      price: '8',
-      rating: '5.5',
-    },
-    {
-      id: '32',
-      category: '6',
-      productName: 'Crispies Banket Pastry',
-      image: require('../resources/images/Pastries2.jpg'),
-      description:
-        'This puff pastry is layered with almond filling, folded into a square, and baked with rock sugar on top.',
-      price: '3',
-      rating: '5',
-    },
-    {
-      id: '33',
-      category: '6',
-      productName: 'Creme Horns Pastry',
-      image: require('../resources/images/Pastires3.jpg'),
-      description:
-        'A puff pastry with course sugar on top, filled with a boiled icing with a texture similar to a marshmallow',
-      price: '8',
-      rating: '4.6',
-    },
-    {
-      id: '34',
-      category: '6',
-      productName: 'Dutch Letter Strips - Chocolate-Dipped',
-      image: require('../resources/images/Pastires4.jpg'),
-      description: 'A delicious strip of our Dutch letter dipped in chocolate.',
-      price: '3',
-      rating: '4',
-    },
-    {
-      id: '35',
-      category: '6',
-      productName: 'Puff Pillows',
-      image: require('../resources/images/Pastires5.jpg'),
-      description:
-        'A customer favorite! This puff pastry shell is filled with a rich butter crème frosting and topped with rock sugar. Delicious to the last bite!',
-      price: '6',
-      rating: '3',
-    },
-    {
-      id: '36',
-      category: '6',
-      productName: 'Almond Sticks',
-      image: require('../resources/images/Pastires6.jpg'),
-      description: 'A puff pastry topped with sliced almonds and course sugar.',
-      price: '8',
-      rating: '4.2',
-    },
-    {
-      id: '37',
-      category: '6',
-      productName: 'Peanut and Almond Pastry',
-      image: require('../resources/images/Pastries1.jpg'),
-      description:
-        'This puff pastry is layered with almond filling, folded into a square, and baked with rock sugar on top.',
-      price: '3',
-      rating: '5',
-    },
-  ],
-};
+export default {
+    "category": [
+        {
+            "id": "1",
+            "category": "Chair",
+            "whiteicons": require('../resources/images/icons/Chair_w.png'),
+            "GrayIcon": require('../resources/images/icons/Chair_b.png')
+        },
+        {
+            "id": "2",
+            "category": "Sofa",
+            "whiteicons": require('../resources/images/icons/Sofa_w.png'),
+            "GrayIcon": require('../resources/images/icons/Sofa_b.png')
+        },
+        {
+            "id": "3",
+            "category": "Ceiling Lights",
+            "whiteicons": require('../resources/images/icons/light_w.png'),
+            "GrayIcon": require('../resources/images/icons/light_b.png')
+        },
+        {
+            "id": "4",
+            "category": "Wall Décor",
+            "whiteicons": require('../resources/images/icons/wall_w.png'),
+            "GrayIcon": require('../resources/images/icons/wall_b.png')
+        },
+        {
+            "id": "5",
+            "category": "Clocks",
+            "whiteicons": require('../resources/images/icons/watch_w.png'),
+            "GrayIcon": require('../resources/images/icons/watch_b.png')
+        },
+        {
+            "id": "6",
+            "category": "Pot",
+            "whiteicons": require('../resources/images/icons/pot_w.png'),
+            "GrayIcon": require('../resources/images/icons/pot_b.png')
+        }
+    ],
+    "products": [
+        {
+            "id": "1",
+            "categoryid": "1",
+            "productname": "Ergonomic Mesh Task Chair",
+            "image": require('../resources/images/chair1.png'),
+            "description": "An on-trend and on-budget option for your office, this modern task chair lets you tackle your to-do list in style.",
+            "price": "83.99",
+            "rating": "4.4"
+        },
+        {
+            "id": "2",
+            "categoryid": "1",
+            "productname": "PC & Racing Game Chair",
+            "image": require('../resources/images/chair2.png'),
+            "description": "You’re a gamer first, you shouldn’t have to spend the cost of an ultrawide monitor to get an ergonomic gaming chair.",
+            "price": "163.99",
+            "rating": "4.7"
+        },
+        {
+            "id": "3",
+            "categoryid": "1",
+            "productname": "Dotpro Ergonomic Task Chair",
+            "image": require('../resources/images/chair3.png'),
+            "description": "A chair that gaurantees healthy freedom of movement",
+            "price": "299",
+            "rating": "5"
+        },
+        {
+            "id": "4",
+            "categoryid": "1",
+            "productname": "Wheels Ergonomic Executive Chair",
+            "image": require('../resources/images/chair4.png'),
+            "description": "An elegant blend of comfort and style, this high-back LeatherSoft office chair is the perfect seating solution for your workspace.",
+            "price": "121",
+            "rating": "4.6"
+        },
+        {
+            "id": "5",
+            "categoryid": "1",
+            "productname": "Mesh Task Chair",
+            "image": require('../resources/images/chair5.png'),
+            "description": "This office chair offers extra comfortable support to the daily office needs. The soft and moderate sponge pad is suitable for your long sitting position.",
+            "price": "97",
+            "rating": "4"
+        },
+        {
+            "id": "6",
+            "categoryid": "1",
+            "productname": "Musgrove Executive Chair",
+            "image": require('../resources/images/chair6.png'),
+            "description": "Get your work done in style with this classic armchair, showcasing faux leather upholstery, and a rolling design",
+            "price": "132",
+            "rating": "3.8"
+        },
+        {
+            "id": "7",
+            "categoryid": "2",
+            "productname": "Wide Square Arm Sofa",
+            "image": require('../resources/images/Sofa.png'),
+            "description": "Coming in hot – the CosmoLiving Highland Sofa with Pillows is everything you need and more.",
+            "price": "419",
+            "rating": "4.1"
+        },
+        {
+            "id": "8",
+            "categoryid": "2",
+            "productname": "Flared Arm Sofa",
+            "image": require('../resources/images/Sofa2.png'),
+            "description": "The Celestia collection sofa is a lovely curved arm stationary sofa that offers the perfect place for family, friends, or casual acquaintances to rest, relax, and recharge.",
+            "price": "380",
+            "rating": "4.2"
+        },
+        {
+            "id": "9",
+            "categoryid": "2",
+            "productname": "Back Convertible Sofa",
+            "image": require('../resources/images/Sofa3.png'),
+            "description": "With its streamlined silhouette and simple, squared cushions, this mid-century modern-inspired sofa lends inviting appeal to your seating ensemble",
+            "price": "325",
+            "rating": "5"
+        },
+        {
+            "id": "10",
+            "categoryid": "2",
+            "productname": "Flared Arm Loveseat",
+            "image": require('../resources/images/Sofa4.png'),
+            "description": "The Ibiza Loveseat is the two seat option of this versatile stationary set designed to fit your space and style.",
+            "price": "362",
+            "rating": "3.8"
+        },
+        {
+            "id": "11",
+            "categoryid": "2",
+            "productname": "Tuxedo Arm Sofa",
+            "image": require('../resources/images/Sofa5.png'),
+            "description": "Style your living room in absolute sophistication with a charming sofa that will bring out the best of your interior space.",
+            "price": "375",
+            "rating": "5"
+        },
+        {
+            "id": "12",
+            "categoryid": "2",
+            "productname": "Recessed Arm Sofa",
+            "image": require('../resources/images/Sofa6.png'),
+            "description": "This sofa pairs ultimate comfort with a stylish versatile design. Covered in soft quartz upholstery with boxy walnut-finished legs, this piece effortlessly adds to neutral or earthy palettes.",
+            "price": "420",
+            "rating": "4.6"
+        },
+        {
+            "id": "13",
+            "categoryid": "2",
+            "productname": "Arm Convertible Sofa",
+            "image": require('../resources/images/sofa7.png'),
+            "description": "The Evan convertible sofa brings together clean design, smart engineering, and craftsmanship on this gorgeous sofa.",
+            "price": "290",
+            "rating": "4"
+        },
+        {
+            "id": "14",
+            "categoryid": "3",
+            "productname": "Light Drum Chandelier",
+            "image": require('../resources/images/light1.png'),
+            "description": "This Pendant features a round design with frosted glass panels. The simple, yet sophisticated design of this fixture will enhance the appearance of any room in your home.",
+            "price": "210",
+            "rating": "3.8"
+        },
+        {
+            "id": "15",
+            "categoryid": "3",
+            "productname": "Light Lantern Drum Pendant",
+            "image": require('../resources/images/light2.png'),
+            "description": "Putting a modern spin on a classic lantern silhouette, this \"4 - Light lantern geometric pendant\" brings a taste of what’s trending as it casts a warm glow over any arrangement!",
+            "price": "126",
+            "rating": "4.1"
+        },
+        {
+            "id": "16",
+            "categoryid": "3",
+            "productname": "Light Candle Style Chandelier",
+            "image": require('../resources/images/light3.png'),
+            "description": "Perfect for catching attention like no other lighting fixture, chandeliers feature striking designs",
+            "price": "127",
+            "rating": "4.2"
+        },
+        {
+            "id": "17",
+            "categoryid": "3",
+            "productname": "Light Unique",
+            "image": require('../resources/images/light4.png'),
+            "description": "The simple yet sophisticated design of this fixture will enhance the appearance of any room in your home.",
+            "price": "216",
+            "rating": "3.8"
+        },
+        {
+            "id": "18",
+            "categoryid": "3",
+            "productname": "Light Single Globe Pendant",
+            "image": require('../resources/images/light5.png'),
+            "description": "Bring a boost of brightness and a taste of what’s trending to any room in your home with this modern 1-light globe pendant.",
+            "price": "231",
+            "rating": "4.1"
+        },
+        {
+            "id": "19",
+            "categoryid": "4",
+            "productname": "Wrapped Canvas Painting Print",
+            "image": require('../resources/images/painting1.png'),
+            "description": "Liven up a bland wall or breathe new life into a tired space with this wrapped canvas painting print. Made in the USA",
+            "price": "200",
+            "rating": "4.2"
+        },
+        {
+            "id": "20",
+            "categoryid": "4",
+            "productname": "Dancing Dragonflies Painting ",
+            "image": require('../resources/images/painting2.png'),
+            "description": "Contemporary, rustic, modern or traditional whatever your style, they've got your walls covered.",
+            "price": "129",
+            "rating": "5"
+        },
+        {
+            "id": "21",
+            "categoryid": "4",
+            "productname": "In the Groove by Zane",
+            "image": require('../resources/images/painting3.png'),
+            "description": "Lending additional layers of color to your ensemble while ridding your home of empty wall space, wall art is a must-have for your home.",
+            "price": "100",
+            "rating": "3.8"
+        },
+        {
+            "id": "22",
+            "categoryid": "4",
+            "productname": "I Love the Rain Painting ",
+            "image": require('../resources/images/painting4.png'),
+            "description": "Bring a splash of color to your space with this painting print, a design that’s sure to grab glances on an empty wall.",
+            "price": "100",
+            "rating": "5"
+        },
+        {
+            "id": "23",
+            "categoryid": "4",
+            "productname": "Festive Frosty",
+            "image": require('../resources/images/painting5.png'),
+            "description": "A premium hand strectched gallery wrapped canavas print created to last.",
+            "price": "100",
+            "rating": "4.6"
+        },
+        {
+            "id": "24",
+            "categoryid": "4",
+            "productname": "Indigo Forest Painting ",
+            "image": require('../resources/images/painting6.jpg'),
+            "description": "Experience the peaceful sight of a faraway forest from the comfort of your cozy home with this woodland-inspired print.",
+            "price": "125",
+            "rating": "4"
+        },
+        {
+            "id": "25",
+            "categoryid": "4",
+            "productname": "Even Flow' Painting Print",
+            "image": require('../resources/images/painting7.png'),
+            "description": "Introduce your contemporary ensemble or round out a brighter space with this lovely wall art.",
+            "price": "162",
+            "rating": "4"
+        },
+        {
+            "id": "26",
+            "categoryid": "5",
+            "productname": "Oversized Gorman 40\" Wall Clock",
+            "image": require('../resources/images/clock1.png'),
+            "description": "Nothing ties a room together better than a great clock, and the one you choose to place in your home should reflect your personality and style.",
+            "price": "234",
+            "rating": "3.8"
+        },
+        {
+            "id": "27",
+            "categoryid": "5",
+            "productname": "Oversized Mayville 32.3\" Wall Clock",
+            "image": require('../resources/images/clock5.png'),
+            "description": "Classic in its design, this lovely analog features metal trim with gold finished decorative rounded rivets.",
+            "price": "200",
+            "rating": "4.1"
+        },
+        {
+            "id": "28",
+            "categoryid": "5",
+            "productname": "Musical Cottage Cuckoo Wall Clock",
+            "image": require('../resources/images/clock6.png'),
+            "description": "Cuckoo bird cuckoos the hour on the top of every hour",
+            "price": "189",
+            "rating": "4.2"
+        },
+        {
+            "id": "29",
+            "categoryid": "5",
+            "productname": "Mahogany Cherry Oak Wall Clock",
+            "image": require('../resources/images/clock7.png'),
+            "description": "This Mahogany Cherry Oak Wall Clock features a mahogany cherry oak finish case. Rich and deeply colored it is timeless and exquisite.",
+            "price": "165",
+            "rating": "3.8"
+        },
+        {
+            "id": "30",
+            "categoryid": "5",
+            "productname": "Chrystin Wall Clock",
+            "image": require('../resources/images/clock8.png'),
+            "description": "This Chrystin Pendulum Wall Clock is a great accent piece for a home or office. It will add style to any environment.",
+            "price": "120",
+            "rating": "4.1"
+        },
+        {
+            "id": "31",
+            "categoryid": "6",
+            "productname": "Lavoir Stone Pot Planter",
+            "image": require('../resources/images/pot.png'),
+            "description": "Flared at the base and tapering towards the top, Lavoir's distinctive shape makes it a real eye-catcher.",
+            "price": "129",
+            "rating": "4.2"
+        },
+        {
+            "id": "32",
+            "categoryid": "6",
+            "productname": "Fibeglass Reinfored Plastic Planter Box",
+            "image": require('../resources/images/pot1.png'),
+            "description": "The perfect pick for everything your green thumb can dream up, this box planter helps you nurture your green thumb in style",
+            "price": "100",
+            "rating": "5"
+        },
+        {
+            "id": "33",
+            "categoryid": "6",
+            "productname": "Ceramic Hanging Planter",
+            "image": require('../resources/images/pot2.png'),
+            "description": "Hang this stylish pot planter anywhere. Etched with a gold geometric pattern and topped off with 6 bead twine hanger.",
+            "price": "100",
+            "rating": "3.8"
+        },
+        {
+            "id": "34",
+            "categoryid": "6",
+            "productname": "Self Watering Resin Pot Planter",
+            "image": require('../resources/images/pot3.png'),
+            "description": "This smart self-watering planter helps you to feel worry-free when busy working.",
+            "price": "100",
+            "rating": "5"
+        },
+        {
+            "id": "35",
+            "categoryid": "6",
+            "productname": "Renita Ceramic Pot Planter",
+            "image": require('../resources/images/pot4.png'),
+            "description": "This marvelous stoneware planter is the perfect addition to your home to display your favorite indoor plants.",
+            "price": "125",
+            "rating": "4.6"
+        },
+        {
+            "id": "36",
+            "categoryid": "6",
+            "productname": "Metal Pot Planter Set",
+            "image": require('../resources/images/pot5.png'),
+            "description": "Planters should not only be functional, but fashionable too. We hear from you. Display your greenery in style with the planter set.",
+            "price": "129",
+            "rating": "4"
+        }
+    ]
+}
+

@@ -1,13 +1,13 @@
 import {Dimensions, Platform,PixelRatio} from 'react-native';
 
 export const colors = {
-  primary: '#3d946a',
-  secondary: '#f63203',
+  primary: '#ff5216',
+  secondary: '#21262b',
   third: '#2c2e33',
-  background: '#eaeceb',
+  background: 'white',
   button: '#7b4df8',
-  darkBackground: '#1d1d1d',
-  lightBackground: '#ecfcf6',
+  darkBackground: '#24292e',
+  lightBackground: '#eeeff0',
   grey: '#a3a3a3',
   error: '#A62122',
   yellow: 'rgb(254,239,93)',
