@@ -15,10 +15,8 @@ export default class CardComponent extends Component {
       productname,
       rating,
       color,
- 
     } = this.props.item;
     const height = metrics.height * 0.45;
-    console.log(color, id);
 
     return (
       <TouchableOpacity
@@ -92,6 +90,7 @@ export default class CardComponent extends Component {
                 alignItems: 'flex-start',
               }}>
               <Text
+                numberOfLines={2}
                 style={{
                   fontSize: 18,
                   fontWeight: 'bold',
@@ -99,22 +98,41 @@ export default class CardComponent extends Component {
                   flex: 1,
                   marginRight: 10,
                   color: colors.primary,
+                  ...this.props.titleStyle,
                 }}>
                 {productname}
               </Text>
-              <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                <Icon name="star" color={colors.rating} size={20} />
-                <Text
-                  style={{
-                    fontSize: 18,
-                    fontFamily: fonts.primary,
-                    marginLeft: 5,
-                  }}>
-                  {rating}
-                </Text>
-              </View>
+              {!this.props.squeez && (
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  <Icon name="star" color={colors.rating} size={20} />
+                  <Text
+                    style={{
+                      fontSize: 18,
+                      fontFamily: fonts.primary,
+                      marginLeft: 5,
+                    }}>
+                    {rating}
+                  </Text>
+                </View>
+              )}
             </View>
-            <Text style={{fontSize: 20, fontWeight: 'bold'}}>${price}</Text>
+            <View style={{flexDirection:'row',justifyContent:'space-between',alignItems:'center'}}>
+              <Text style={{fontSize: 20, fontWeight: 'bold',...this.props.priceStyle}}>${price}</Text>
+              {this.props.squeez && (
+                <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                  <Icon name="star" color={colors.rating} size={14} />
+                  <Text
+                    style={{
+                      fontSize: 18,
+                      fontFamily: fonts.primary,
+                      marginLeft: 5,
+                      ...this.props.ratingStyle
+                    }}>
+                    {rating}
+                  </Text>
+                </View>
+              )}
+            </View>
           </View>
         </View>
       </TouchableOpacity>

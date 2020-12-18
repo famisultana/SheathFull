@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import Navigator from '../../utils/Navigator';
 import {colors, metrics} from '../../utils/Theme';
 
@@ -15,18 +15,21 @@ export default class Header extends Component {
     return (
       <View style={styles.container}>
         {isBack ? (
-          <View style={{flexDirection: 'row'}}>
-            <View style={{flex: 1}}>
-              <TouchableOpacity
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+            <View style={{}}>
+              <Icon
+                name="arrow-back-circle"
+                style={styles.backIcon}
                 onPress={() => Navigator.goBack()}
-                activeOpacity={0.9}
-                style={styles.backView}>
-                <Icon name="chevron-left" style={styles.icon} />
-              </TouchableOpacity>
+              />
             </View>
             <View>
-              <Text
-                style={{fontSize: 22, fontWeight: 'bold', textAlign: 'center'}}>
+              <Text style={{fontSize: 22, fontWeight: '600', marginLeft: 10}}>
                 {this.props.title}
               </Text>
             </View>
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
     height: 60,
     paddingHorizontal: metrics.defaultMargin,
     justifyContent: 'center',
-    alignItems:'center',
+    alignItems: 'center',
   },
   icon: {
     fontSize: 32,
@@ -56,5 +59,9 @@ const styles = StyleSheet.create({
   },
   text: {
     fontWeight: 'bold',
+  },
+  backIcon: {
+    color: colors.primary,
+    fontSize: 50,
   },
 });
