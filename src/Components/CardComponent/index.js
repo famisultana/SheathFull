@@ -72,10 +72,11 @@ export default class CardComponent extends Component {
             <ImageView
               source={image}
               style={{
-                width: '100%',
+                width: '90%',
                 height: '100%',
                 borderTopRightRadius: 20,
                 borderTopLeftRadius: 20,
+                alignSelf:'center',
               }}
             />
           </View>

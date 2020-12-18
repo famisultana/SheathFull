@@ -52,20 +52,28 @@ class Detail extends Component {
       rating,
       image,
       id,
+      color
     } = this.props.route.params.item;
 
     const flag = this.props.cart?.items.filter((val) => val.id == id);
     const quantity = flag.length !== 0 ? flag[0].quantity : 0;
 
     return (
-      <RootView style={{}} top={0}>
-        <Icon
-          name="arrow-back-circle"
-          style={styles.backIcon}
-          onPress={() => Navigator.goBack()}
-        />
-        <View style={{flex: 4, marginBottom: 20}}>
-          <ImageView cover style={{flex: 1}} source={image} />
+      <RootView style={{}}>
+        <Header title='Back'/>
+        <View style={{flex: 4, marginBottom: 20,paddingHorizontal:10}}>
+        <View
+            style={{
+              position: 'absolute',
+              backgroundColor: color,
+              right: metrics.defaultMargin,
+              top: 10,
+              left: metrics.defaultMargin,
+              height:metrics.height*0.2,
+              borderRadius: 20,
+            }}
+          />
+          <ImageView style={{flex: 1}} source={image} />
         </View>
         <View style={styles.infoContainer}>
           <View style={styles.spacebetween}>
@@ -191,7 +199,7 @@ const styles = StyleSheet.create({
     color: colors.primary,
     position: 'absolute',
     zIndex: 2,
-    top: 50,
+    top: 20,
     left: 10,
     fontSize: 50,
   },

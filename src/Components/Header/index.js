@@ -14,27 +14,17 @@ export default class Header extends Component {
     const {isBack = true} = this.props;
     return (
       <View style={styles.container}>
-        {isBack ? (
-          <View style={{flexDirection: 'row'}}>
-            <View style={{flex: 1}}>
-              <TouchableOpacity
-                onPress={() => Navigator.goBack()}
-                activeOpacity={0.9}
-                style={styles.backView}>
-                <Icon name="chevron-left" style={styles.icon} />
-              </TouchableOpacity>
-            </View>
-            <View>
-              <Text
-                style={{fontSize: 22, fontWeight: 'bold', textAlign: 'center'}}>
-                {this.props.title}
-              </Text>
-            </View>
-            <View style={{flex: 1}}></View>
-          </View>
-        ) : (
-          <Icon name="menu" style={styles.icon} />
-        )}
+        <View style={{flexDirection: 'row',alignItems:'center'}}>
+          <TouchableOpacity
+            onPress={() => Navigator.goBack()}
+            activeOpacity={0.9}
+            style={styles.backView}>
+            <Icon name="arrow-left" style={styles.icon} />
+          </TouchableOpacity>
+          <Text style={{fontSize: 22, fontWeight: 'bold', textAlign: 'center'}}>
+            {this.props.title}
+          </Text>
+        </View>
       </View>
     );
   }
@@ -45,14 +35,19 @@ const styles = StyleSheet.create({
     height: 60,
     paddingHorizontal: metrics.defaultMargin,
     justifyContent: 'center',
-    alignItems:'center',
   },
   icon: {
     fontSize: 32,
+    color: 'white',
   },
   backView: {
-    flexDirection: 'row',
+    width: 44,
+    height: 44,
+    borderRadius: 25,
+    justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: colors.primary,
+    marginRight:20
   },
   text: {
     fontWeight: 'bold',
