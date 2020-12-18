@@ -16,9 +16,6 @@ import {
 //Screens imports
 import Home from './src/Screens/Home';
 import Detail from './src/Screens/Detail';
-import Intro from './src/Screens/Intro';
-import List from './src/Screens/List';
-import Checkout from './src/Screens/Checkout';
 import OrderDetail from './src/Screens/OrderDetail';
 import OrderPlaced from './src/Screens/OrderPlaced';
 import Search from './src/Screens/SearchScreen'
@@ -47,12 +44,9 @@ export default class App extends Component {
                 cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
               }}>
               <Stack.Screen name="Home" component={Home} />
-              <Stack.Screen name="List" component={List} />
               <Stack.Screen name="Search" component={Search} />
               <Stack.Screen name="Detail" component={Detail} />
-              <Stack.Screen name="Intro" component={Intro} />
               <Stack.Screen name="OrderDetail" component={OrderDetail} />
-              <Stack.Screen name="Checkout" component={Checkout} />
               <Stack.Screen name='OrderPlaced' component={OrderPlaced} />
             </Stack.Navigator>
           </NavigationContainer>

@@ -15,8 +15,10 @@ export default class CardComponent extends Component {
       productname,
       rating,
       color,
+     
     } = this.props.item;
-    const height = metrics.height * 0.45;
+
+    const { height = metrics.height * 0.45 } = this.props;
 
     return (
       <TouchableOpacity
@@ -40,7 +42,7 @@ export default class CardComponent extends Component {
             },
             this.props.containerStyle,
           ]}>
-          <View
+          {/* <View
             style={{
               width: 40,
               height: 40,
@@ -54,7 +56,7 @@ export default class CardComponent extends Component {
               zIndex: 3,
             }}>
             <Icon name="heart" size={20} color={colors.primary} />
-          </View>
+          </View> */}
           <View
             style={{
               position: 'absolute',

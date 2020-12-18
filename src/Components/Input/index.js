@@ -35,7 +35,6 @@ class InputBox extends Component {
             value={this.props.value}
             placeholder={this.props.placeholder}
             secureTextEntry={this.state.hidePassword}
-            placeholderTextColor={this.props.placeholderColor}
             onChangeText={this.props.onChangeText}
             keyboardType={this.props.keyboardType}
             blurOnSubmit={true}
@@ -51,26 +50,25 @@ class InputBox extends Component {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    borderRadius: 5,
-    height: 40,
-    borderColor: colors.primary,
-    borderWidth: 1,
-    marginBottom:20
+    height: 45,
+    marginBottom:20,
+    backgroundColor: colors.lightBackground
   },
 
   input: {
     paddingLeft: 15,
     paddingRight: 15,
     color: colors.primary,
-    paddingVertical: 10,
+    paddingVertical: 15,
     textTransform: 'lowercase',
   },
   text: {
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: fonts.primary,
-    color: colors.primary, 
-    fontWeight:'bold',
-    marginBottom:5
+    color: colors.secondary, 
+    fontWeight:'900',
+    marginBottom:5,
+    textTransform:'uppercase'
   },
   icon: {
     position: 'absolute',

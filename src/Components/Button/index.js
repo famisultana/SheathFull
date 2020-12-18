@@ -35,7 +35,7 @@ class SimpleButton extends Component {
                 color: 'white',
                 fontSize: 17,
                 padding: 8,
-                fontFamily: fonts.primaryBold,
+                fontWeight: '700',
                 textAlign: 'center',
                 ...this.props.textStyle,
               }}>

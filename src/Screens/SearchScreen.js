@@ -37,7 +37,15 @@ export default function SearchScreen() {
         data={list}
         keyExtractor={() => Math.random().toString()}
         renderItem={({item}) => (
-          <CardComponent squeez ratingStyle={styles.rating} priceStyle={styles.price} item={item} titleStyle={styles.title} containerStyle={styles.containerStyle} />
+          <CardComponent 
+          height={metrics.height*0.3}
+          squeez 
+          ratingStyle={styles.rating} 
+          priceStyle={styles.price} 
+          item={item} 
+          titleStyle={styles.title} 
+          containerStyle={styles.containerStyle} 
+          />
         )}
       />
     </RootView>
@@ -47,11 +55,10 @@ export default function SearchScreen() {
 const styles = StyleSheet.create({
   containerStyle: {
     width: metrics.width * 0.52 - metrics.defaultMargin * 2,
-    height: metrics.height * 0.35,
     marginBottom: '10%',
   },
   title:{
-      fontSize:17,
+      fontSize:16,
       color:colors.grey
   },
   price:{

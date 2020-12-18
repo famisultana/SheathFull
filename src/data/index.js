@@ -74,6 +74,7 @@ export default {
             "image": require('../resources/images/chair4.png'),
             "description": "An elegant blend of comfort and style, this high-back LeatherSoft office chair is the perfect seating solution for your workspace.",
             "price": "121",
+            "isRecommended": true,
             "color":color[3] , "rating": "4.6"
         },
         {
@@ -120,6 +121,7 @@ export default {
             "image": require('../resources/images/Sofa3.png'),
             "description": "With its streamlined silhouette and simple, squared cushions, this mid-century modern-inspired sofa lends inviting appeal to your seating ensemble",
             "price": "325",
+            "isRecommended": true,
             "color":color[1] , "rating": "5"
         },
         {
@@ -147,6 +149,7 @@ export default {
             "image": require('../resources/images/Sofa6.png'),
             "description": "This sofa pairs ultimate comfort with a stylish versatile design. Covered in soft quartz upholstery with boxy walnut-finished legs, this piece effortlessly adds to neutral or earthy palettes.",
             "price": "420",
+            "isRecommended": true,
             "color":color[4] , "rating": "4.6"
         },
         {
@@ -220,6 +223,7 @@ export default {
             "image": require('../resources/images/painting2.png'),
             "description": "Contemporary, rustic, modern or traditional whatever your style, they've got your walls covered.",
             "price": "129",
+            "isRecommended": true,
             "color":color[5] , "rating": "5"
         },
         {
@@ -247,6 +251,7 @@ export default {
             "image": require('../resources/images/painting5.png'),
             "description": "A premium hand strectched gallery wrapped canavas print created to last.",
             "price": "100",
+            "isRecommended": true,
             "color":color[1] , "rating": "4.6"
         },
         {
@@ -292,6 +297,7 @@ export default {
             "image": require('../resources/images/clock6.png'),
             "description": "Cuckoo bird cuckoos the hour on the top of every hour",
             "price": "189",
+            "isRecommended": true,
             "color":'#edafaf' ,  "rating": "4.2"
         },
         {
@@ -301,6 +307,7 @@ export default {
             "image": require('../resources/images/clock7.png'),
             "description": "This Mahogany Cherry Oak Wall Clock features a mahogany cherry oak finish case. Rich and deeply colored it is timeless and exquisite.",
             "price": "165",
+
             "color":color[0] , "rating": "3.8"
         },
         {
@@ -346,6 +353,7 @@ export default {
             "image": require('../resources/images/pot3.png'),
             "description": "This smart self-watering planter helps you to feel worry-free when busy working.",
             "price": "100",
+            "isRecommended": true,
             "color":color[5] , "rating": "5"
         },
         {
@@ -355,7 +363,8 @@ export default {
             "image": require('../resources/images/pot4.png'),
             "description": "This marvelous stoneware planter is the perfect addition to your home to display your favorite indoor plants.",
             "price": "125",
-            "color":'#edafaf' ,  "rating": "4.6"
+            "color":'#edafaf' ,  "rating": "4.6",
+            "isRecommended": true
         },
         {
             "id": "36",
