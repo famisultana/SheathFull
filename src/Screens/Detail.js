@@ -7,10 +7,11 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import ImageView from '../Components/ImageView';
-import {colors, metrics} from '../utils/Theme';
+import {colors, metrics, text} from '../utils/Theme';
 import Icon from 'react-native-vector-icons/Ionicons';
 // import data from '../data';
 import Header from '../Components/Header';
+import Button from '../Components/Button';
 import RootView from '../Components/RootView';
 import Navigator from '../utils/Navigator';
 import {connect} from 'react-redux';
@@ -26,40 +27,26 @@ class Detail extends Component {
   };
 
   onBuyNowPress = () => {
-    Navigator.navigate('OrderDetail')
+    Navigator.navigate('OrderDetail');
   };
 
   _renderButton = () => {
     return (
-      <TouchableOpacity
-        activeOpacity={0.8}
-        onPress={() => {
-          this.onBuyNowPress();
-        }}
-        style={{
-          backgroundColor: colors.secondary,
-          marginLeft: 10,
-          height: 150,
-          borderRadius: 30,
-          borderBottomEndRadius: 0,
-          justifyContent: 'center',
-        }}>
-        <Text
-          style={{
-            transform: [{rotate: '-90deg'}],
-            color: 'white',
-            fontWeight: '700',
-            textAlign: 'center',
-          }}>
-          Checkout
-        </Text>
-      </TouchableOpacity>
+      <View style={{width: '100%'}}>
+        <Button
+          dark
+          style={{marginVertical: 20}}
+          // loading={this.state.loading}
+          onPress={() => this.onBuyNowPress()}
+          text="Checkout"
+        />
+      </View>
     );
   };
 
   render() {
     const {
-      productName,
+      productname,
       price,
       description,
       rating,
@@ -71,7 +58,7 @@ class Detail extends Component {
     const quantity = flag.length !== 0 ? flag[0].quantity : 0;
 
     return (
-      <RootView style={{flex: 10}} top={0}>
+      <RootView style={{}} top={0}>
         <Icon
           name="arrow-back-circle"
           style={styles.backIcon}
@@ -82,31 +69,46 @@ class Detail extends Component {
         </View>
         <View style={styles.infoContainer}>
           <View style={styles.spacebetween}>
-            <Text style={{...styles.heading,textTransform:'capitalize'}}>{productName}</Text>
-            <Text style={[styles.heading, {fontSize: 20}]}>
+            <Text
+              style={{
+                ...styles.heading,
+                textTransform: 'capitalize',
+                width: '80%',
+              }}>
+              {productname}
+            </Text>
+            <Text style={[styles.heading, {fontSize: 20, color: colors.grey}]}>
               <Icon
                 color={'#FDCC0D'}
                 name={'star-sharp'}
                 size={20}
                 style={{fontWeight: 'bold'}}
-              />
-              {" "}{rating}
+              />{' '}
+              {rating}
             </Text>
           </View>
-          <View style={styles.descriptionView}>
-            <Text style={styles.desc}>{description}</Text>
+
+          <View style={{marginHorizontal: metrics.defaultMargin}}>
+            <Text
+              style={{
+                fontWeight: '600',
+                fontSize: 26,
+                marginVertical: metrics.smallMargin,
+              }}>
+              ${price}
+            </Text>
           </View>
-          <Text
-            style={[
-              styles.heading,
-              {marginLeft: metrics.defaultMargin, fontSize: 18},
-            ]}>
-            Quantity
-          </Text>
 
           <View style={styles.quantityView}>
-            <TouchableOpacity onPress={this.deleteItem} style={styles.iconView}>
-              <Icon name="remove" style={styles.icon} />
+            <TouchableOpacity
+              onPress={this.deleteItem}
+              style={{
+                ...styles.iconView,
+                backgroundColor: 'white',
+                borderWidth: 1,
+                borderColor: colors.grey,
+              }}>
+              <Icon name="remove" style={{...styles.icon, color: 'black'}} />
             </TouchableOpacity>
             <Text style={styles.quantity}>{quantity}</Text>
             <TouchableOpacity onPress={this.addItem} style={styles.iconView}>
@@ -114,38 +116,15 @@ class Detail extends Component {
             </TouchableOpacity>
           </View>
 
+          <View style={styles.descriptionView}>
+            <Text style={styles.desc}>{description}</Text>
+          </View>
+
           <View
             style={{
-              flexDirection: 'row',
-              justifyContent: 'space-around',
-              alignItems: 'center',
-              flex: 2,
-              paddingLeft: metrics.defaultMargin,
+              paddingHorizontal: metrics.defaultMargin,
             }}>
-            <View
-              style={[
-                styles.keyDetailsContainer,
-                {flex: 1, marginRight: '5%'},
-              ]}>
-              <Text style={[styles.desc, {fontWeight: 'bold'}]}>
-                Delivery Time
-              </Text>
-              <Text style={styles.subheading}>
-                <Icon
-                  name={'time-outline'}
-                  size={20}
-                  style={{fontWeight: 'bold'}}
-                />
-                45 Mins
-              </Text>
-            </View>
-            <View style={[styles.keyDetailsContainer]}>
-              <Text style={[styles.desc, {fontWeight: 'bold'}]}>
-                Total Price
-              </Text>
-              <Text style={styles.subheading}>${price}.00</Text>
-            </View>
-            {this.props.cart.items.length !== 0 && this._renderButton()}
+            {this._renderButton()}
           </View>
         </View>
       </RootView>
@@ -154,18 +133,16 @@ class Detail extends Component {
 }
 
 const styles = StyleSheet.create({
-  infoContainer: {
-    flex: 4,
-  },
+  infoContainer: {},
   spacebetween: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     paddingHorizontal: metrics.defaultMargin,
   },
   heading: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
   descriptionView: {
     paddingVertical: metrics.smallMargin,
@@ -211,7 +188,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   backIcon: {
-    color: 'black',
+    color: colors.primary,
     position: 'absolute',
     zIndex: 2,
     top: 50,
