@@ -21,6 +21,7 @@ import List from './src/Screens/List';
 import Checkout from './src/Screens/Checkout';
 import OrderDetail from './src/Screens/OrderDetail';
 import OrderPlaced from './src/Screens/OrderPlaced';
+import Search from './src/Screens/SearchScreen'
 
 const Stack = createStackNavigator();
 const store = createStore(reducers, {});
@@ -47,6 +48,7 @@ export default class App extends Component {
               }}>
               <Stack.Screen name="Home" component={Home} />
               <Stack.Screen name="List" component={List} />
+              <Stack.Screen name="Search" component={Search} />
               <Stack.Screen name="Detail" component={Detail} />
               <Stack.Screen name="Intro" component={Intro} />
               <Stack.Screen name="OrderDetail" component={OrderDetail} />

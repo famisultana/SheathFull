@@ -63,7 +63,7 @@ export default class Home extends Component {
               }}>
               SheathFull Store
             </Text>
-            <SearchBar disabled />
+            <SearchBar onPress={()=> Navigator.push('Search')} disabled />
           </View>
           <ListView
           

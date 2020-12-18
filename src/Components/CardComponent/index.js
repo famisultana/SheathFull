@@ -15,6 +15,7 @@ export default class CardComponent extends Component {
       productname,
       rating,
       color,
+ 
     } = this.props.item;
     const height = metrics.height * 0.45;
     console.log(color, id);
@@ -24,20 +25,23 @@ export default class CardComponent extends Component {
         activeOpacity={0.8}
         onPress={() => Navigator.navigate('Detail', {item: this.props.item})}>
         <View
-          style={{
-            backgroundColor: 'white',
-            borderRadius: 30,
-            shadowColor: colors.third,
-            shadowOffset: {
-              width: 0,
-              height: 2,
+          style={[
+            {
+              backgroundColor: 'white',
+              borderRadius: 30,
+              shadowColor: colors.third,
+              shadowOffset: {
+                width: 0,
+                height: 2,
+              },
+              shadowOpacity: 0.25,
+              shadowRadius: 3.84,
+              width: metrics.width * 0.7,
+              marginLeft: metrics.defaultMargin,
+              height: height,
             },
-            shadowOpacity: 0.25,
-            shadowRadius: 3.84,
-            width: metrics.width * 0.7,
-            marginLeft: metrics.defaultMargin,
-            height: height,
-          }}>
+            this.props.containerStyle,
+          ]}>
           <View
             style={{
               width: 40,
