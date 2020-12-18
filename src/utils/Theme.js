@@ -14,6 +14,7 @@ export const colors = {
   borderColor: 'grey',
   lightGrey: 'rgb(245,245,245)',
   darkGray: 'rgba(234,234,232)',
+  rating:'#ffdd65'
 };
 
 

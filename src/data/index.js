@@ -1,4 +1,4 @@
-const colors = ['#dce5f1','#ebe8de','#ffece7','#ffece7','#eafbdd','#f4f3fe']
+const color = ['#dce5f1','#ebe8de','#ffece7','#eafbdd','#f4f3fe','#deccf0','#deccf0']
 
 export default {
     "category": [
@@ -47,7 +47,7 @@ export default {
             "image": require('../resources/images/chair1.png'),
             "description": "An on-trend and on-budget option for your office, this modern task chair lets you tackle your to-do list in style.",
             "price": "83.99",
-            "rating": "4.4"
+            "color":color[0] , "rating": "4.4"
         },
         {
             "id": "2",
@@ -56,7 +56,7 @@ export default {
             "image": require('../resources/images/chair2.png'),
             "description": "You’re a gamer first, you shouldn’t have to spend the cost of an ultrawide monitor to get an ergonomic gaming chair.",
             "price": "163.99",
-            "rating": "4.7"
+            "color":color[1] , "rating": "4.7"
         },
         {
             "id": "3",
@@ -65,7 +65,7 @@ export default {
             "image": require('../resources/images/chair3.png'),
             "description": "A chair that gaurantees healthy freedom of movement",
             "price": "299",
-            "rating": "5"
+            "color":color[2] , "rating": "5"
         },
         {
             "id": "4",
@@ -74,7 +74,7 @@ export default {
             "image": require('../resources/images/chair4.png'),
             "description": "An elegant blend of comfort and style, this high-back LeatherSoft office chair is the perfect seating solution for your workspace.",
             "price": "121",
-            "rating": "4.6"
+            "color":color[3] , "rating": "4.6"
         },
         {
             "id": "5",
@@ -83,7 +83,7 @@ export default {
             "image": require('../resources/images/chair5.png'),
             "description": "This office chair offers extra comfortable support to the daily office needs. The soft and moderate sponge pad is suitable for your long sitting position.",
             "price": "97",
-            "rating": "4"
+            "color":color[4] , "rating": "4"
         },
         {
             "id": "6",
@@ -92,7 +92,7 @@ export default {
             "image": require('../resources/images/chair6.png'),
             "description": "Get your work done in style with this classic armchair, showcasing faux leather upholstery, and a rolling design",
             "price": "132",
-            "rating": "3.8"
+            "color":color[5] , "rating": "3.8"
         },
         {
             "id": "7",
@@ -101,6 +101,7 @@ export default {
             "image": require('../resources/images/Sofa.png'),
             "description": "Coming in hot – the CosmoLiving Highland Sofa with Pillows is everything you need and more.",
             "price": "419",
+            "color":'#edafaf' , 
             "rating": "4.1"
         },
         {
@@ -110,7 +111,7 @@ export default {
             "image": require('../resources/images/Sofa2.png'),
             "description": "The Celestia collection sofa is a lovely curved arm stationary sofa that offers the perfect place for family, friends, or casual acquaintances to rest, relax, and recharge.",
             "price": "380",
-            "rating": "4.2"
+            "color":color[0] , "rating": "4.2"
         },
         {
             "id": "9",
@@ -119,7 +120,7 @@ export default {
             "image": require('../resources/images/Sofa3.png'),
             "description": "With its streamlined silhouette and simple, squared cushions, this mid-century modern-inspired sofa lends inviting appeal to your seating ensemble",
             "price": "325",
-            "rating": "5"
+            "color":color[1] , "rating": "5"
         },
         {
             "id": "10",
@@ -128,7 +129,7 @@ export default {
             "image": require('../resources/images/Sofa4.png'),
             "description": "The Ibiza Loveseat is the two seat option of this versatile stationary set designed to fit your space and style.",
             "price": "362",
-            "rating": "3.8"
+            "color":color[2] , "rating": "3.8"
         },
         {
             "id": "11",
@@ -137,7 +138,7 @@ export default {
             "image": require('../resources/images/Sofa5.png'),
             "description": "Style your living room in absolute sophistication with a charming sofa that will bring out the best of your interior space.",
             "price": "375",
-            "rating": "5"
+            "color":color[3] , "rating": "5"
         },
         {
             "id": "12",
@@ -146,7 +147,7 @@ export default {
             "image": require('../resources/images/Sofa6.png'),
             "description": "This sofa pairs ultimate comfort with a stylish versatile design. Covered in soft quartz upholstery with boxy walnut-finished legs, this piece effortlessly adds to neutral or earthy palettes.",
             "price": "420",
-            "rating": "4.6"
+            "color":color[4] , "rating": "4.6"
         },
         {
             "id": "13",
@@ -155,7 +156,7 @@ export default {
             "image": require('../resources/images/sofa7.png'),
             "description": "The Evan convertible sofa brings together clean design, smart engineering, and craftsmanship on this gorgeous sofa.",
             "price": "290",
-            "rating": "4"
+            "color":color[5] , "rating": "4"
         },
         {
             "id": "14",
@@ -164,6 +165,7 @@ export default {
             "image": require('../resources/images/light1.png'),
             "description": "This Pendant features a round design with frosted glass panels. The simple, yet sophisticated design of this fixture will enhance the appearance of any room in your home.",
             "price": "210",
+            "color":'#edafaf' , 
             "rating": "3.8"
         },
         {
@@ -173,7 +175,7 @@ export default {
             "image": require('../resources/images/light2.png'),
             "description": "Putting a modern spin on a classic lantern silhouette, this \"4 - Light lantern geometric pendant\" brings a taste of what’s trending as it casts a warm glow over any arrangement!",
             "price": "126",
-            "rating": "4.1"
+            "color":color[0] , "rating": "4.1"
         },
         {
             "id": "16",
@@ -182,7 +184,7 @@ export default {
             "image": require('../resources/images/light3.png'),
             "description": "Perfect for catching attention like no other lighting fixture, chandeliers feature striking designs",
             "price": "127",
-            "rating": "4.2"
+            "color":color[1] , "rating": "4.2"
         },
         {
             "id": "17",
@@ -191,7 +193,7 @@ export default {
             "image": require('../resources/images/light4.png'),
             "description": "The simple yet sophisticated design of this fixture will enhance the appearance of any room in your home.",
             "price": "216",
-            "rating": "3.8"
+            "color":color[2] , "rating": "3.8"
         },
         {
             "id": "18",
@@ -200,7 +202,7 @@ export default {
             "image": require('../resources/images/light5.png'),
             "description": "Bring a boost of brightness and a taste of what’s trending to any room in your home with this modern 1-light globe pendant.",
             "price": "231",
-            "rating": "4.1"
+            "color":color[3] , "rating": "4.1"
         },
         {
             "id": "19",
@@ -209,7 +211,7 @@ export default {
             "image": require('../resources/images/painting1.png'),
             "description": "Liven up a bland wall or breathe new life into a tired space with this wrapped canvas painting print. Made in the USA",
             "price": "200",
-            "rating": "4.2"
+            "color":color[4] , "rating": "4.2"
         },
         {
             "id": "20",
@@ -218,7 +220,7 @@ export default {
             "image": require('../resources/images/painting2.png'),
             "description": "Contemporary, rustic, modern or traditional whatever your style, they've got your walls covered.",
             "price": "129",
-            "rating": "5"
+            "color":color[5] , "rating": "5"
         },
         {
             "id": "21",
@@ -227,7 +229,7 @@ export default {
             "image": require('../resources/images/painting3.png'),
             "description": "Lending additional layers of color to your ensemble while ridding your home of empty wall space, wall art is a must-have for your home.",
             "price": "100",
-            "rating": "3.8"
+            "color":'#edafaf' ,  "rating": "3.8"
         },
         {
             "id": "22",
@@ -236,7 +238,7 @@ export default {
             "image": require('../resources/images/painting4.png'),
             "description": "Bring a splash of color to your space with this painting print, a design that’s sure to grab glances on an empty wall.",
             "price": "100",
-            "rating": "5"
+            "color":color[0] , "rating": "5"
         },
         {
             "id": "23",
@@ -245,7 +247,7 @@ export default {
             "image": require('../resources/images/painting5.png'),
             "description": "A premium hand strectched gallery wrapped canavas print created to last.",
             "price": "100",
-            "rating": "4.6"
+            "color":color[1] , "rating": "4.6"
         },
         {
             "id": "24",
@@ -254,7 +256,7 @@ export default {
             "image": require('../resources/images/painting6.jpg'),
             "description": "Experience the peaceful sight of a faraway forest from the comfort of your cozy home with this woodland-inspired print.",
             "price": "125",
-            "rating": "4"
+            "color":color[2] , "rating": "4"
         },
         {
             "id": "25",
@@ -263,7 +265,7 @@ export default {
             "image": require('../resources/images/painting7.png'),
             "description": "Introduce your contemporary ensemble or round out a brighter space with this lovely wall art.",
             "price": "162",
-            "rating": "4"
+            "color":color[3] , "rating": "4"
         },
         {
             "id": "26",
@@ -272,7 +274,7 @@ export default {
             "image": require('../resources/images/clock1.png'),
             "description": "Nothing ties a room together better than a great clock, and the one you choose to place in your home should reflect your personality and style.",
             "price": "234",
-            "rating": "3.8"
+            "color":color[4] , "rating": "3.8"
         },
         {
             "id": "27",
@@ -281,7 +283,7 @@ export default {
             "image": require('../resources/images/clock5.png'),
             "description": "Classic in its design, this lovely analog features metal trim with gold finished decorative rounded rivets.",
             "price": "200",
-            "rating": "4.1"
+            "color":color[5] , "rating": "4.1"
         },
         {
             "id": "28",
@@ -290,7 +292,7 @@ export default {
             "image": require('../resources/images/clock6.png'),
             "description": "Cuckoo bird cuckoos the hour on the top of every hour",
             "price": "189",
-            "rating": "4.2"
+            "color":'#edafaf' ,  "rating": "4.2"
         },
         {
             "id": "29",
@@ -299,7 +301,7 @@ export default {
             "image": require('../resources/images/clock7.png'),
             "description": "This Mahogany Cherry Oak Wall Clock features a mahogany cherry oak finish case. Rich and deeply colored it is timeless and exquisite.",
             "price": "165",
-            "rating": "3.8"
+            "color":color[0] , "rating": "3.8"
         },
         {
             "id": "30",
@@ -308,7 +310,7 @@ export default {
             "image": require('../resources/images/clock8.png'),
             "description": "This Chrystin Pendulum Wall Clock is a great accent piece for a home or office. It will add style to any environment.",
             "price": "120",
-            "rating": "4.1"
+            "color":color[1] , "rating": "4.1"
         },
         {
             "id": "31",
@@ -317,7 +319,7 @@ export default {
             "image": require('../resources/images/pot.png'),
             "description": "Flared at the base and tapering towards the top, Lavoir's distinctive shape makes it a real eye-catcher.",
             "price": "129",
-            "rating": "4.2"
+            "color":color[2] , "rating": "4.2"
         },
         {
             "id": "32",
@@ -326,7 +328,7 @@ export default {
             "image": require('../resources/images/pot1.png'),
             "description": "The perfect pick for everything your green thumb can dream up, this box planter helps you nurture your green thumb in style",
             "price": "100",
-            "rating": "5"
+            "color":color[3] , "rating": "5"
         },
         {
             "id": "33",
@@ -335,7 +337,7 @@ export default {
             "image": require('../resources/images/pot2.png'),
             "description": "Hang this stylish pot planter anywhere. Etched with a gold geometric pattern and topped off with 6 bead twine hanger.",
             "price": "100",
-            "rating": "3.8"
+            "color":color[4] , "rating": "3.8"
         },
         {
             "id": "34",
@@ -344,7 +346,7 @@ export default {
             "image": require('../resources/images/pot3.png'),
             "description": "This smart self-watering planter helps you to feel worry-free when busy working.",
             "price": "100",
-            "rating": "5"
+            "color":color[5] , "rating": "5"
         },
         {
             "id": "35",
@@ -353,7 +355,7 @@ export default {
             "image": require('../resources/images/pot4.png'),
             "description": "This marvelous stoneware planter is the perfect addition to your home to display your favorite indoor plants.",
             "price": "125",
-            "rating": "4.6"
+            "color":'#edafaf' ,  "rating": "4.6"
         },
         {
             "id": "36",
@@ -362,7 +364,7 @@ export default {
             "image": require('../resources/images/pot5.png'),
             "description": "Planters should not only be functional, but fashionable too. We hear from you. Display your greenery in style with the planter set.",
             "price": "129",
-            "rating": "4"
+            "color":color[0] , "rating": "4"
         }
     ]
 }

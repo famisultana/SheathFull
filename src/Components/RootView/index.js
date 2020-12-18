@@ -7,12 +7,12 @@ import {
 
 class RootView extends Component {
   render() {
-    const {top, bottom} = this.props;
+    const {top, bottom,statusBar=colors.background,barStyle='dark-content'} = this.props;
     return (
-      <View style={{flex: 1, backgroundColor: colors.background}}>
+      <View style={{flex: 1, backgroundColor: statusBar}}>
         <StatusBar
           backgroundColor={colors.background}
-          barStyle="dark-content"
+          barStyle={barStyle}
         />
         <SafeAreaInsetsContext.Consumer>
           {(insets) => (
